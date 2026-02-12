@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2f3542, #1e272e);
+  color: #f1f2f6;
+}
+
+/* ===============================
+   CONTAINER PRINCIPAL
+================================= */
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+/* ===============================
+   TITRE
+================================= */
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h1 span,
+h1 i {
+  color: #ffa502;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+h3 {
+  color: #ffa502;
+  margin-bottom: 1rem;
+}
+
+/* ===============================
+   BOUTONS
+================================= */
+.choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 2rem 0;
+}
+
+.choices button {
+  padding: 1rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: #f1f2f6;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2f3542;
+  transition: all 0.25s ease;
+}
+
+/* Hover moderne */
+.choices button:hover {
+  background: #ffa502;
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(255, 165, 2, 0.4);
+}
+
+/* Click animation */
+.choices button:active {
+  transform: scale(0.95);
+}
+
+/* ===============================
+   PROGRESSION
+================================= */
+#progress {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #ffa502;
+}
+
+/* ===============================
+   BOUTON RECOMMENCER
+================================= */
+button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: #ffa502;
+  color: white;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #ff7f00;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 127, 0, 0.4);
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+@media (max-width: 500px) {
+  .choices {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
